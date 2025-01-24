@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5px #A4A4A4 solid ;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Plus Jakarta Sans, Arial, Helvetica, sans-serif;
+    font-size: 6.4rem;
+    padding: 0 0 2.6rem 0;
+}
+
+p {
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-weight:300;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0 0 1.3rem 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.lable {
+    background-color: #D1FFAC;
+    border: 0.5px #6BEE00 solid;
+    border-radius: 4.2px;
+    width: 12rem;
+    height: 2rem;
+    box-shadow: 0 4px 4px rgba(45, 247, 0, 0.18);
+    margin: 15px 0 30px 0;
+    cursor: default;
+}
+
+.userInput{
+    width: 144px;
+    height: 56px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: 0.5px #CDCDCD solid;
+}
+
+.doubleStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.doubleStyle p {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: 1.07rem;
+    padding: 0 0 4px 0;
+}
+
+input {
+    width: 124px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-family: Inter , Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+
+.black{
+  background: black;
+  height: 56px;
+  border-radius: 8px;
+  color: white;
+  font-weight:500;
+  font-size: 1.72rem;
+}
+  
+.small {
+    width: 144px;
+}
+
+.mainGame {
+    display: flex;
+    width: 420px;
+    justify-content: space-between;
+}
+
+.container {
+    width: 144px;
+    padding: 0;
+    height: 128px;
+}
+
+.inputt, .outputt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.outputt{
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    border: 0.5px #CDCDCD solid;
+
+}
+
+span {
+    color: black;
+    font-family: Inter , Arial, Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 1.72rem;
+  width: 124px;
+  text-align: center;
+}
+
+.outputt .userInput{
+    border: none;
+    width: 143px;
+}
+
+.long {
+    width: 420px;
+}
+.line {
+    border-top: 0.5px #CDCDCD solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 16px 0;
+}

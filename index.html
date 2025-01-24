@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <h1>Guess My Number!</h1>
+    <p>
+      Guess the secret number in as few tries as possible!<br />Get hints after
+      each guess – too high, too low, or correct.<br />Ready to play? 🎯
+    </p>
+
+    <p>&lt; Between 1 and 20 &gt;</p>
+
+    <div class="main">
+      <div class="main2">
+        <button class="lable">Start Guessing🤔</button>
+        <div class="mainGame">
+          <div class="container inputt">
+            <div class="userInput doubleStyle">
+              <p>Guess Here :</p>
+              <input class="number" type="text" />
+            </div>
+            <button class="small black">Check</button>
+          </div>
+          <div class="container outputt">
+            <div class="userInput doubleStyle">
+              <p>Current Score :</p>
+              <span class="currentScore">20</span>
+            </div>
+            <div class="userInput doubleStyle">
+              <p>High Score :</p>
+              <span class="highScore">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"><button class="black long">Play Again!</button></div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
