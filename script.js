@@ -41,9 +41,11 @@ document.querySelector('.small').addEventListener('click', function(){
 
     }
 
-    else if (userInput > randomNumber){
+    else {
+        
+        document.querySelector('.lable').textContent = (userInput < randomNumber)? "Too Low 📉":"Too High 📈";
+
         if (score > 1){
-            document.querySelector('.lable').textContent = "Too High 📈";
             score--;
             document.querySelector('.currentScore').textContent = score;
 
@@ -61,26 +63,6 @@ document.querySelector('.small').addEventListener('click', function(){
         }
     }
         
-
-    else if (userInput < randomNumber){
-        if (score > 1){
-            document.querySelector('.lable').textContent = "Too Low 📈";
-            score--;
-            document.querySelector('.currentScore').textContent = score;
-
-            document.querySelector('.lable').style.backgroundColor = '#FFEE8F';
-            document.querySelector('.lable').style.border = '0.5px solid #FFD900';
-            document.querySelector('.lable').style.boxShadow = '0 4px 4px rgba(255, 212, 0, 0.23)';
-        }
-        else{
-            document.querySelector('.lable').textContent = "You Lost 😭";
-            document.querySelector('.currentScore').textContent = 0;
-
-            document.querySelector('.lable').style.backgroundColor = '#FF8D8D';
-            document.querySelector('.lable').style.border = '0.5px solid #FF1F1F';
-            document.querySelector('.lable').style.boxShadow = '0 4px 4px rgba(255, 0, 0, 0.23)';
-        }
-    }
 
 });
 
