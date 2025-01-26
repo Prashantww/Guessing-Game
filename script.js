@@ -9,21 +9,17 @@ document.querySelector('.small').addEventListener('click', function(){
     
     if (!userInput){
         document.querySelector('.lable').textContent = "No Number ☹️";
+
+        document.querySelector('.lable').style.backgroundColor = '#FF8D8D';
+        document.querySelector('.lable').style.border = '0.5px solid #FF1F1F';
+        document.querySelector('.lable').style.boxShadow = '0 4px 4px rgba(255, 0, 0, 0.23)';
         if (score > 1){
             score--;
             document.querySelector('.currentScore').textContent = score;
-
-            document.querySelector('.lable').style.backgroundColor = '#FF8D8D';
-            document.querySelector('.lable').style.border = '0.5px solid #FF1F1F';
-            document.querySelector('.lable').style.boxShadow = '0 4px 4px rgba(255, 0, 0, 0.23)';
         }
         else{
             document.querySelector('.lable').textContent = "You Lost 😭";
             document.querySelector('.currentScore').textContent = 0;
-
-            document.querySelector('.lable').style.backgroundColor = '#FF8D8D';
-            document.querySelector('.lable').style.border = '0.5px solid #FF1F1F';
-            document.querySelector('.lable').style.boxShadow = '0 4px 4px rgba(255, 0, 0, 0.23)';
         }
     }
 
